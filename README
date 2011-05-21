@@ -1,0 +1,6 @@
+Plasma SoC
+
+This project is an extension to the Plasma CPU,
+available on OpenCores.org, to support more
+Xilinx FPGA boards with the addition of MIG
+generated DDR/DDR2 controllers.
