@@ -101,37 +101,74 @@ architecture logic of plasma_s3e is
            gpioA_in     : in std_logic_vector(31 downto 0));
    end component; --plasma
 
-   component ddr_ctrl
-      port(clk      : in std_logic;
-           clk_2x   : in std_logic;
-           reset_in : in std_logic;
+--   component ddr_ctrl
+--      port(clk      : in std_logic;
+--           clk_2x   : in std_logic;
+--           reset_in : in std_logic;
+--
+--           address  : in std_logic_vector(25 downto 2);
+--           byte_we  : in std_logic_vector(3 downto 0);
+--           data_w   : in std_logic_vector(31 downto 0);
+--           data_r   : out std_logic_vector(31 downto 0);
+--           active   : in std_logic;
+--           no_start : in std_logic;
+--           no_stop  : in std_logic;
+--           pause    : out std_logic;
+--
+--           SD_CK_P  : out std_logic;     --clock_positive
+--           SD_CK_N  : out std_logic;     --clock_negative
+--           SD_CKE   : out std_logic;     --clock_enable
+--
+--           SD_BA    : out std_logic_vector(1 downto 0);  --bank_address
+--           SD_A     : out std_logic_vector(12 downto 0); --address(row or col)
+--           SD_CS    : out std_logic;     --chip_select
+--           SD_RAS   : out std_logic;     --row_address_strobe
+--           SD_CAS   : out std_logic;     --column_address_strobe
+--           SD_WE    : out std_logic;     --write_enable
+--
+--           SD_DQ    : inout std_logic_vector(15 downto 0); --data
+--           SD_UDM   : out std_logic;     --upper_byte_enable
+--           SD_UDQS  : inout std_logic;   --upper_data_strobe
+--           SD_LDM   : out std_logic;     --low_byte_enable
+--           SD_LDQS  : inout std_logic);  --low_data_strobe
+--   end component; --ddr
 
-           address  : in std_logic_vector(25 downto 2);
-           byte_we  : in std_logic_vector(3 downto 0);
-           data_w   : in std_logic_vector(31 downto 0);
-           data_r   : out std_logic_vector(31 downto 0);
-           active   : in std_logic;
-           no_start : in std_logic;
-           no_stop  : in std_logic;
-           pause    : out std_logic;
-
-           SD_CK_P  : out std_logic;     --clock_positive
-           SD_CK_N  : out std_logic;     --clock_negative
-           SD_CKE   : out std_logic;     --clock_enable
-
-           SD_BA    : out std_logic_vector(1 downto 0);  --bank_address
-           SD_A     : out std_logic_vector(12 downto 0); --address(row or col)
-           SD_CS    : out std_logic;     --chip_select
-           SD_RAS   : out std_logic;     --row_address_strobe
-           SD_CAS   : out std_logic;     --column_address_strobe
-           SD_WE    : out std_logic;     --write_enable
-
-           SD_DQ    : inout std_logic_vector(15 downto 0); --data
-           SD_UDM   : out std_logic;     --upper_byte_enable
-           SD_UDQS  : inout std_logic;   --upper_data_strobe
-           SD_LDM   : out std_logic;     --low_byte_enable
-           SD_LDQS  : inout std_logic);  --low_data_strobe
-   end component; --ddr
+	component ddr_ctrl
+		port(
+			cntrl0_ddr_dq                 : inout std_logic_vector(7 downto 0);
+			cntrl0_ddr_a                  : out   std_logic_vector(12 downto 0);
+			cntrl0_ddr_ba                 : out   std_logic_vector(1 downto 0);
+			cntrl0_ddr_cke                : out   std_logic;
+			cntrl0_ddr_cs_n               : out   std_logic;
+			cntrl0_ddr_ras_n              : out   std_logic;
+			cntrl0_ddr_cas_n              : out   std_logic;
+			cntrl0_ddr_we_n               : out   std_logic;
+			cntrl0_ddr_dm                 : out   std_logic_vector(0 downto 0);
+			cntrl0_rst_dqs_div_in         : in    std_logic;
+			cntrl0_rst_dqs_div_out        : out   std_logic;
+			sys_clkb                      : in    std_logic;
+			sys_clk                       : in    std_logic;
+			reset_in_n                    : in    std_logic;
+			cntrl0_burst_done             : in    std_logic;
+			cntrl0_init_val               : out   std_logic;
+			cntrl0_ar_done                : out   std_logic;
+			cntrl0_user_data_valid        : out   std_logic;
+			cntrl0_auto_ref_req           : out   std_logic;
+			cntrl0_user_cmd_ack           : out   std_logic;
+			cntrl0_user_command_register  : in    std_logic_vector(2 downto 0);
+			cntrl0_clk_tb                 : out   std_logic;
+			cntrl0_clk90_tb               : out   std_logic;
+			cntrl0_sys_rst_tb             : out   std_logic;
+			cntrl0_sys_rst90_tb           : out   std_logic;
+			cntrl0_sys_rst180_tb          : out   std_logic;
+			cntrl0_user_data_mask         : in    std_logic_vector(1 downto 0);
+			cntrl0_user_output_data       : out   std_logic_vector(15 downto 0);
+			cntrl0_user_input_data        : in    std_logic_vector(15 downto 0);
+			cntrl0_user_input_address     : in    std_logic_vector(24 downto 0);
+			cntrl0_ddr_dqs                : inout std_logic_vector(0 downto 0);
+			cntrl0_ddr_ck                 : out   std_logic_vector(0 downto 0);
+			cntrl0_ddr_ck_n               : out   std_logic_vector(0 downto 0));
+	end component;
 
    signal clk_reg      : std_logic;
    signal address      : std_logic_vector(31 downto 2);
@@ -208,37 +245,73 @@ begin  --architecture
          gpio0_out    => gpio0_out,
          gpioA_in     => gpio0_in);
          
-   u2_ddr: ddr_ctrl
-      port map (
-         clk      => clk_reg,
-         clk_2x   => CLK_50MHZ,
-         reset_in => reset,
+--   u2_ddr: ddr_ctrl
+--      port map (
+--         clk      => clk_reg,
+--         clk_2x   => CLK_50MHZ,
+--         reset_in => reset,
+--
+--         address  => address(25 downto 2),
+--         byte_we  => byte_we,
+--         data_w   => data_write,
+--         data_r   => data_r_ddr,
+--         active   => ddr_active,
+--         no_start => no_ddr_start,
+--         no_stop  => no_ddr_stop,
+--         pause    => pause_ddr,
+--
+--         SD_CK_P  => SD_CK_P,    --clock_positive
+--         SD_CK_N  => SD_CK_N,    --clock_negative
+--         SD_CKE   => SD_CKE,     --clock_enable
+--   
+--         SD_BA    => SD_BA,      --bank_address
+--         SD_A     => SD_A,       --address(row or col)
+--         SD_CS    => SD_CS,      --chip_select
+--         SD_RAS   => SD_RAS,     --row_address_strobe
+--         SD_CAS   => SD_CAS,     --column_address_strobe
+--         SD_WE    => SD_WE,      --write_enable
+--
+--         SD_DQ    => SD_DQ,      --data
+--         SD_UDM   => SD_UDM,     --upper_byte_enable
+--         SD_UDQS  => SD_UDQS,    --upper_data_strobe
+--         SD_LDM   => SD_LDM,     --low_byte_enable
+--         SD_LDQS  => SD_LDQS);   --low_data_strobe
 
-         address  => address(25 downto 2),
-         byte_we  => byte_we,
-         data_w   => data_write,
-         data_r   => data_r_ddr,
-         active   => ddr_active,
-         no_start => no_ddr_start,
-         no_stop  => no_ddr_stop,
-         pause    => pause_ddr,
-
-         SD_CK_P  => SD_CK_P,    --clock_positive
-         SD_CK_N  => SD_CK_N,    --clock_negative
-         SD_CKE   => SD_CKE,     --clock_enable
-   
-         SD_BA    => SD_BA,      --bank_address
-         SD_A     => SD_A,       --address(row or col)
-         SD_CS    => SD_CS,      --chip_select
-         SD_RAS   => SD_RAS,     --row_address_strobe
-         SD_CAS   => SD_CAS,     --column_address_strobe
-         SD_WE    => SD_WE,      --write_enable
-
-         SD_DQ    => SD_DQ,      --data
-         SD_UDM   => SD_UDM,     --upper_byte_enable
-         SD_UDQS  => SD_UDQS,    --upper_data_strobe
-         SD_LDM   => SD_LDM,     --low_byte_enable
-         SD_LDQS  => SD_LDQS);   --low_data_strobe
+	u2_ddr_ctrl :ddr_ctrl
+		port map (
+			cntrl0_ddr_dq                 => cntrl0_ddr_dq,
+			cntrl0_ddr_a                  => cntrl0_ddr_a,
+			cntrl0_ddr_ba                 => cntrl0_ddr_ba,
+			cntrl0_ddr_cke                => cntrl0_ddr_cke,
+			cntrl0_ddr_cs_n               => cntrl0_ddr_cs_n,
+			cntrl0_ddr_ras_n              => cntrl0_ddr_ras_n,
+			cntrl0_ddr_cas_n              => cntrl0_ddr_cas_n,
+			cntrl0_ddr_we_n               => cntrl0_ddr_we_n,
+			cntrl0_ddr_dm                 => cntrl0_ddr_dm,
+			cntrl0_rst_dqs_div_in         => cntrl0_rst_dqs_div_in,
+			cntrl0_rst_dqs_div_out        => cntrl0_rst_dqs_div_out,
+			sys_clkb                      => sys_clkb,
+			sys_clk                       => sys_clk,
+			reset_in_n                    => reset_in_n,
+			cntrl0_burst_done             => cntrl0_burst_done,
+			cntrl0_init_val               => cntrl0_init_val,
+			cntrl0_ar_done                => cntrl0_ar_done,
+			cntrl0_user_data_valid        => cntrl0_user_data_valid,
+			cntrl0_auto_ref_req           => cntrl0_auto_ref_req,
+			cntrl0_user_cmd_ack           => cntrl0_user_cmd_ack,
+			cntrl0_user_command_register  => cntrl0_user_command_register,
+			cntrl0_clk_tb                 => cntrl0_clk_tb,
+			cntrl0_clk90_tb               => cntrl0_clk90_tb,
+			cntrl0_sys_rst_tb             => cntrl0_sys_rst_tb,
+			cntrl0_sys_rst90_tb           => cntrl0_sys_rst90_tb,
+			cntrl0_sys_rst180_tb          => cntrl0_sys_rst180_tb,
+			cntrl0_user_data_mask         => cntrl0_user_data_mask,
+			cntrl0_user_output_data       => cntrl0_user_output_data,
+			cntrl0_user_input_data        => cntrl0_user_input_data,
+			cntrl0_user_input_address     => cntrl0_user_input_address,
+			cntrl0_ddr_dqs                => cntrl0_ddr_dqs,
+			cntrl0_ddr_ck                 => cntrl0_ddr_ck,
+			cntrl0_ddr_ck_n               => cntrl0_ddr_ck_n);
 
    --Flash control (only lower 16-bit data lines connected)
    flash_ctrl: process(reset, clk_reg, flash_active, write_enable, 
