@@ -1,0 +1,2 @@
+# Output products list for <dcm_ddr_s3e>
+dcm_ddr_s3e_flist.txt
