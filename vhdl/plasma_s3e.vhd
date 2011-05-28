@@ -135,7 +135,7 @@ architecture logic of plasma_s3e is
 
 	component ddr_ctrl
 		port(
-			cntrl0_ddr_dq                 : inout std_logic_vector(7 downto 0);
+			cntrl0_ddr_dq                 : inout std_logic_vector(15 downto 0);
 			cntrl0_ddr_a                  : out   std_logic_vector(12 downto 0);
 			cntrl0_ddr_ba                 : out   std_logic_vector(1 downto 0);
 			cntrl0_ddr_cke                : out   std_logic;
@@ -143,11 +143,9 @@ architecture logic of plasma_s3e is
 			cntrl0_ddr_ras_n              : out   std_logic;
 			cntrl0_ddr_cas_n              : out   std_logic;
 			cntrl0_ddr_we_n               : out   std_logic;
-			cntrl0_ddr_dm                 : out   std_logic_vector(0 downto 0);
+			cntrl0_ddr_dm                 : out   std_logic_vector(1 downto 0);
 			cntrl0_rst_dqs_div_in         : in    std_logic;
 			cntrl0_rst_dqs_div_out        : out   std_logic;
-			sys_clkb                      : in    std_logic;
-			sys_clk                       : in    std_logic;
 			reset_in_n                    : in    std_logic;
 			cntrl0_burst_done             : in    std_logic;
 			cntrl0_init_val               : out   std_logic;
@@ -161,13 +159,28 @@ architecture logic of plasma_s3e is
 			cntrl0_sys_rst_tb             : out   std_logic;
 			cntrl0_sys_rst90_tb           : out   std_logic;
 			cntrl0_sys_rst180_tb          : out   std_logic;
-			cntrl0_user_data_mask         : in    std_logic_vector(1 downto 0);
-			cntrl0_user_output_data       : out   std_logic_vector(15 downto 0);
-			cntrl0_user_input_data        : in    std_logic_vector(15 downto 0);
+			cntrl0_user_data_mask         : in    std_logic_vector(3 downto 0);
+			cntrl0_user_output_data       : out   std_logic_vector(31 downto 0);
+			cntrl0_user_input_data        : in    std_logic_vector(31 downto 0);
 			cntrl0_user_input_address     : in    std_logic_vector(24 downto 0);
-			cntrl0_ddr_dqs                : inout std_logic_vector(0 downto 0);
+			clk_int                       : in    std_logic;
+			clk90_int                     : in    std_logic;
+			dcm_lock                      : in    std_logic;
+			cntrl0_ddr_dqs                : inout std_logic_vector(1 downto 0);
 			cntrl0_ddr_ck                 : out   std_logic_vector(0 downto 0);
 			cntrl0_ddr_ck_n               : out   std_logic_vector(0 downto 0));
+	end component;
+	
+	component dcm_ddr_s3e
+		port(
+			U1_CLKIN_IN : IN std_logic;
+			U1_RST_IN : IN std_logic;          
+			U1_CLKIN_IBUFG_OUT : OUT std_logic;
+			U1_CLK2X_OUT : OUT std_logic;
+			U2_CLK0_OUT : OUT std_logic;
+			U2_CLK90_OUT : OUT std_logic;
+			U2_CLK180_OUT : OUT std_logic;
+			U2_LOCKED_OUT : OUT std_logic);
 	end component;
 
    signal clk_reg      : std_logic;
@@ -290,8 +303,6 @@ begin  --architecture
 			cntrl0_ddr_dm                 => cntrl0_ddr_dm,
 			cntrl0_rst_dqs_div_in         => cntrl0_rst_dqs_div_in,
 			cntrl0_rst_dqs_div_out        => cntrl0_rst_dqs_div_out,
-			sys_clkb                      => sys_clkb,
-			sys_clk                       => sys_clk,
 			reset_in_n                    => reset_in_n,
 			cntrl0_burst_done             => cntrl0_burst_done,
 			cntrl0_init_val               => cntrl0_init_val,
@@ -309,9 +320,23 @@ begin  --architecture
 			cntrl0_user_output_data       => cntrl0_user_output_data,
 			cntrl0_user_input_data        => cntrl0_user_input_data,
 			cntrl0_user_input_address     => cntrl0_user_input_address,
+			clk_int                       => clk_int,
+			clk90_int                     => clk90_int,
+			dcm_lock                      => dcm_lock,
 			cntrl0_ddr_dqs                => cntrl0_ddr_dqs,
 			cntrl0_ddr_ck                 => cntrl0_ddr_ck,
 			cntrl0_ddr_ck_n               => cntrl0_ddr_ck_n);
+			
+	u3_dcm_ddr_s3e: dcm_ddr_s3e
+		port map(
+			U1_CLKIN_IN => '0',
+			U1_RST_IN => '0',
+			U1_CLKIN_IBUFG_OUT => '0',
+			U1_CLK2X_OUT => v,
+			U2_CLK0_OUT => '0',
+			U2_CLK90_OUT => '0',
+			U2_CLK180_OUT => '0',
+			U2_LOCKED_OUT => '0');
 
    --Flash control (only lower 16-bit data lines connected)
    flash_ctrl: process(reset, clk_reg, flash_active, write_enable, 
