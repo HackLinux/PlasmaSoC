@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 13.1
 --  \   \         Application : xaw2vhdl
 --  /   /         Filename : dcm_ddr_s3e.vhd
--- /___/   /\     Timestamp : 05/28/2011 05:02:55
+-- /___/   /\     Timestamp : 06/02/2011 04:17:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -25,7 +25,7 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity dcm_ddr_s3e is
+entity ddr_ctrl_dcm is
    port ( U1_CLKIN_IN        : in    std_logic; 
           U1_RST_IN          : in    std_logic; 
           U1_CLKIN_IBUFG_OUT : out   std_logic; 
@@ -34,9 +34,9 @@ entity dcm_ddr_s3e is
           U2_CLK90_OUT       : out   std_logic; 
           U2_CLK180_OUT      : out   std_logic; 
           U2_LOCKED_OUT      : out   std_logic);
-end dcm_ddr_s3e;
+end ddr_ctrl_dcm;
 
-architecture BEHAVIORAL of dcm_ddr_s3e is
+architecture BEHAVIORAL of ddr_ctrl_dcm is
    signal GND_BIT            : std_logic;
    signal U1_CLKIN_IBUFG     : std_logic;
    signal U1_CLK2X_BUF       : std_logic;

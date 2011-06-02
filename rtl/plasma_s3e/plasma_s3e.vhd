@@ -135,7 +135,7 @@ architecture logic of plasma_s3e is
 
 	component ddr_ctrl
 		port(
-			cntrl0_ddr_dq                 : inout std_logic_vector(15 downto 0);
+	    cntrl0_ddr_dq                 : inout std_logic_vector(15 downto 0);
 			cntrl0_ddr_a                  : out   std_logic_vector(12 downto 0);
 			cntrl0_ddr_ba                 : out   std_logic_vector(1 downto 0);
 			cntrl0_ddr_cke                : out   std_logic;
@@ -171,7 +171,7 @@ architecture logic of plasma_s3e is
 			cntrl0_ddr_ck_n               : out   std_logic_vector(0 downto 0));
 	end component;
 	
-	component dcm_ddr_s3e
+	component ddr_ctrl_dcm
 		port(
 			U1_CLKIN_IN : IN std_logic;
 			U1_RST_IN : IN std_logic;          
@@ -201,6 +201,11 @@ architecture logic of plasma_s3e is
    signal reset        : std_logic;
    signal gpio0_out    : std_logic_vector(31 downto 0);
    signal gpio0_in     : std_logic_vector(31 downto 0);
+
+   signal clk100_0	: std_logic;
+   signal clk100_90	: std_logic;
+   signal clk100_180	: std_logic;
+   signal clk100_lock	: std_logic;
    
 begin  --architecture
    --Divide 50 MHz clock by two
@@ -327,16 +332,16 @@ begin  --architecture
 			cntrl0_ddr_ck                 => cntrl0_ddr_ck,
 			cntrl0_ddr_ck_n               => cntrl0_ddr_ck_n);
 			
-	u3_dcm_ddr_s3e: dcm_ddr_s3e
+	u3_ddr_ctrl_dcm: ddr_ctrl_dcm
 		port map(
-			U1_CLKIN_IN => '0',
-			U1_RST_IN => '0',
-			U1_CLKIN_IBUFG_OUT => '0',
-			U1_CLK2X_OUT => v,
-			U2_CLK0_OUT => '0',
-			U2_CLK90_OUT => '0',
-			U2_CLK180_OUT => '0',
-			U2_LOCKED_OUT => '0');
+			U1_CLKIN_IN => CLK_50MHZ,
+			U1_RST_IN => reset,
+			U1_CLKIN_IBUFG_OUT => OPEN,
+			U1_CLK2X_OUT => OPEN,
+			U2_CLK0_OUT => clk100_0,
+			U2_CLK90_OUT => clk100_90,
+			U2_CLK180_OUT => clk100_180,
+			U2_LOCKED_OUT => clk100_lock);
 
    --Flash control (only lower 16-bit data lines connected)
    flash_ctrl: process(reset, clk_reg, flash_active, write_enable, 
