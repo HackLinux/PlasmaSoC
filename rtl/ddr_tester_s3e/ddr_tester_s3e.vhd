@@ -4,7 +4,7 @@ USE ieee.std_logic_arith.all;
 USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
-ENTITY ddrtest_s3e IS
+ENTITY ddr_tester_s3e IS
    PORT( 
       clk50      : IN     std_logic;
       rst        : IN     std_logic;
@@ -24,9 +24,9 @@ ENTITY ddrtest_s3e IS
       ddr_dq     : INOUT  std_logic_vector (15 DOWNTO 0);
       ddr_dqs    : INOUT  std_logic_vector (1 DOWNTO 0)
    );
-END ddrtest_s3e ;
+END ddr_tester_s3e ;
 
-ARCHITECTURE struct OF ddrtest_s3e IS
+ARCHITECTURE struct OF ddr_tester_s3e IS
 
    -- Architecture declarations
 
@@ -108,7 +108,7 @@ ARCHITECTURE struct OF ddrtest_s3e IS
 		cntrl0_ddr_ck_n               : out   std_logic_vector(0 downto 0));
 	end component;
 	
-   COMPONENT ddrtest_check
+   COMPONENT ddr_tester_check
    PORT (
       clk100_90   : IN     std_logic ;
       data_valid  : IN     std_logic ;
@@ -121,7 +121,7 @@ ARCHITECTURE struct OF ddrtest_s3e IS
    );
    END COMPONENT;
 	
-   COMPONENT ddrtest_fsm
+   COMPONENT ddr_tester_fsm
    PORT (
       clk100_0        : IN     std_logic ;
       clk100_180      : IN     std_logic ;
@@ -212,7 +212,7 @@ BEGIN
 			cntrl0_ddr_ck_n               => cntrl0_ddr_ck_n);
 			
 		
-   u3_ddrtest_check : ddrtest_check
+   u3_ddr_tester_check : ddr_tester_check
       PORT MAP (
          clk100_90   => clk100_90,
          data_valid  => data_valid,
@@ -223,7 +223,7 @@ BEGIN
          err         => err,
          error_trig  => error_trig);
 		
-   u4_ddrtest_fsm : ddrtest_fsm
+   u4_ddr_tester_fsm : ddr_tester_fsm
       PORT MAP (
          clk100_0        => clk100_0,
          clk100_180      => clk100_180,

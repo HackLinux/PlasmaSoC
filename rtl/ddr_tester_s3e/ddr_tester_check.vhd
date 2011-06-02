@@ -4,7 +4,7 @@ USE ieee.std_logic_arith.all;
 USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
-ENTITY ddrtest_check IS
+ENTITY ddr_tester_check IS
    PORT( 
       clk100_90   : IN     std_logic;
       data_valid  : IN     std_logic;
@@ -14,9 +14,9 @@ ENTITY ddrtest_check IS
       strt_pb     : IN     std_logic;
       err         : OUT    std_logic;
       error_trig  : OUT    std_logic);
-END ddrtest_check;
+END ddr_tester_check;
 
-ARCHITECTURE flow OF ddrtest_check IS
+ARCHITECTURE flow OF ddr_tester_check IS
 
    -- Architecture declarations
    SIGNAL data_count : std_logic_vector (15 DOWNTO 0); -- Internal data counter

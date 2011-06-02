@@ -4,7 +4,7 @@ USE ieee.std_logic_arith.all;
 USE ieee.std_logic_unsigned.all;
 USE ieee.numeric_std.all;
 
-ENTITY ddrtest_fsm IS
+ENTITY ddr_tester_fsm IS
    PORT( 
       clk100_0        : IN     std_logic;
       clk100_180      : IN     std_logic;
@@ -24,9 +24,9 @@ ENTITY ddrtest_fsm IS
       dram_data_w     : OUT    std_logic_vector (31 DOWNTO 0);
       leds            : OUT    std_logic_vector (7 DOWNTO 0);
       read_done       : OUT    std_logic);
-END ddrtest_fsm;
+END ddr_tester_fsm;
  
-ARCHITECTURE fsm OF ddrtest_fsm IS
+ARCHITECTURE fsm OF ddr_tester_fsm IS
 
    -- Architecture Declarations
    SIGNAL ar_done_internal : std_logic;  -- Signals internally when the AR command is done
