@@ -375,7 +375,7 @@
 
     parameter BA_BITS          =       2;  // Set this parmaeter to control how many Bank Address bits are used
     parameter full_mem_bits    =       BA_BITS+ADDR_BITS+COL_BITS; // Set this parameter to control how many unique addresses are used
-    parameter part_mem_bits    =       12; // Set this parameter to control how many unique addresses are used
+    parameter part_mem_bits    =       25; // Set this parameter to control how many unique addresses are used
 
     parameter no_halt          =       1; // If set to 1, the model won't halt on command sequence/major errors
     parameter DEBUG            =       1; // Turn on DEBUG message

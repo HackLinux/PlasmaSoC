@@ -102,7 +102,7 @@ ARCHITECTURE behavior OF ddr_tester_s3e_tb IS
    signal leds : std_logic_vector(7 downto 0);
 
    -- Clock period definitions
-   constant clk50_period : time := 10 ns;
+   constant clk50_period : time := 20 ns;
  
 BEGIN
  

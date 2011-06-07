@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2011-06-07T05:39:46</DateModified>
+  <DateModified>2011-06-07T11:29:39</DateModified>
   <ModuleName>ddr_tester_s3e</ModuleName>
   <SummaryTimeStamp>2011-06-02T05:20:58</SummaryTimeStamp>
   <SavedFilePath>/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/iseconfig/ddr_tester_s3e.xreport</SavedFilePath>
