@@ -1,0 +1,347 @@
+# //  ModelSim SE-64 6.5f_1 Aug 31 2010 Linux 2.6.38-8-generic
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {ddr_tester_s3e_tb.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling package ddr_ctrl_parameters_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_wr_gray_cntr
+# -- Compiling architecture arc of ddr_ctrl_wr_gray_cntr
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_s3_dq_iob
+# -- Compiling architecture arc of ddr_ctrl_s3_dq_iob
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_s3_dqs_iob
+# -- Compiling architecture arc of ddr_ctrl_s3_dqs_iob
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_s3_dm_iob
+# -- Compiling architecture arc of ddr_ctrl_s3_dm_iob
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_rd_gray_cntr
+# -- Compiling architecture arc of ddr_ctrl_rd_gray_cntr
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_ram8d_1
+# -- Compiling architecture arc of ddr_ctrl_ram8d_1
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_ram8d_0
+# -- Compiling architecture arc of ddr_ctrl_ram8d_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_fifo_1_wr_en_0
+# -- Compiling architecture arc of ddr_ctrl_fifo_1_wr_en_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_fifo_0_wr_en_0
+# -- Compiling architecture arc of ddr_ctrl_fifo_0_wr_en_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_dqs_delay_0
+# -- Compiling architecture arc of ddr_ctrl_dqs_delay_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_tap_dly
+# -- Compiling architecture arc_tap_dly of ddr_ctrl_tap_dly
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_infrastructure_iobs_0
+# -- Compiling architecture arc of ddr_ctrl_infrastructure_iobs_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_data_write_0
+# -- Compiling architecture arc of ddr_ctrl_data_write_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_data_read_controller_0
+# -- Compiling architecture arc of ddr_ctrl_data_read_controller_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_data_read_0
+# -- Compiling architecture arc of ddr_ctrl_data_read_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_data_path_iobs_0
+# -- Compiling architecture arc of ddr_ctrl_data_path_iobs_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_controller_iobs_0
+# -- Compiling architecture arc of ddr_ctrl_controller_iobs_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_cal_ctl
+# -- Compiling architecture arc_cal_ctl of ddr_ctrl_cal_ctl
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_iobs_0
+# -- Compiling architecture arc of ddr_ctrl_iobs_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_infrastructure
+# -- Compiling architecture arc of ddr_ctrl_infrastructure
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_data_path_0
+# -- Compiling architecture arc of ddr_ctrl_data_path_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_controller_0
+# -- Compiling architecture arc of ddr_ctrl_controller_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_cal_top
+# -- Compiling architecture arc of ddr_ctrl_cal_top
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_top_0
+# -- Compiling architecture arc of ddr_ctrl_top_0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Loading package ddr_ctrl_parameters_0
+# -- Compiling entity ddr_ctrl_infrastructure_top0
+# -- Compiling architecture arc of ddr_ctrl_infrastructure_top0
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl_dcm
+# -- Compiling architecture behavioral of ddr_ctrl_dcm
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package vcomponents
+# -- Compiling entity ddr_ctrl
+# -- Compiling architecture arc_mem_interface_top of ddr_ctrl
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ddr_tester_fsm
+# -- Compiling architecture fsm of ddr_tester_fsm
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ddr_tester_check
+# -- Compiling architecture flow of ddr_tester_check
+# Model Technology ModelSim SE-64 vlog 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Compiling module ddr_model
+# 
+# Top level modules:
+# 	ddr_model
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity ddr_tester_s3e
+# -- Compiling architecture struct of ddr_tester_s3e
+# Model Technology ModelSim SE-64 vcom 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity ddr_tester_s3e_tb
+# -- Compiling architecture behavior of ddr_tester_s3e_tb
+# Model Technology ModelSim SE-64 vlog 6.5f_1 Compiler 2010.08 Aug 31 2010
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# vsim -L xilinxcorelib_ver -L unisims_ver -lib work -voptargs=\"+acc\" -t 1ps work.ddr_tester_s3e_tb glbl 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.ddr_tester_s3e_tb(behavior)#1
+# Loading work.glbl(fast)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.ddr_tester_s3e(struct)#1
+# Loading unisim.vcomponents
+# Loading work.ddr_ctrl_dcm(behavioral)#1
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.dcm_sp(dcm_sp_v)#1
+# Loading unisim.dcm_sp_clock_divide_by_2(dcm_sp_clock_divide_by_2_v)#1
+# Loading unisim.dcm_sp_maximum_period_check(dcm_sp_maximum_period_check_v)#1
+# Loading unisim.dcm_sp_maximum_period_check(dcm_sp_maximum_period_check_v)#2
+# Loading unisim.dcm_sp_clock_lost(dcm_sp_clock_lost_v)#1
+# Loading unisim.ibufg(ibufg_v)#1
+# Loading unisim.bufg(bufg_v)#1
+# Loading unisim.inv(inv_v)#1
+# Loading unisim.fds(fds_v)#1
+# Loading unisim.fd(fd_v)#1
+# Loading unisim.or2(or2_v)#1
+# Loading unisim.or3(or3_v)#1
+# Loading work.ddr_ctrl(arc_mem_interface_top)#1
+# Loading work.ddr_ctrl_parameters_0
+# Loading work.ddr_ctrl_top_0(arc)#1
+# Loading work.ddr_ctrl_controller_0(arc)#1
+# Loading work.ddr_ctrl_data_path_0(arc)#1
+# Loading work.ddr_ctrl_data_read_0(arc)#1
+# Loading work.ddr_ctrl_rd_gray_cntr(arc)#1
+# Loading unisim.fdre(fdre_v)#1
+# Loading work.ddr_ctrl_ram8d_0(arc)#1
+# Loading unisim.ram16x1d(ram16x1d_v)#1
+# Loading work.ddr_ctrl_ram8d_1(arc)#1
+# Loading work.ddr_ctrl_data_read_controller_0(arc)#1
+# Loading work.ddr_ctrl_dqs_delay_0(arc)#1
+# Loading unisim.lut4(lut4_v)#1
+# Loading work.ddr_ctrl_fifo_0_wr_en_0(arc)#1
+# Loading unisim.fdce(fdce_v)#1
+# Loading work.ddr_ctrl_fifo_1_wr_en_0(arc)#1
+# Loading work.ddr_ctrl_wr_gray_cntr(arc)#1
+# Loading work.ddr_ctrl_data_write_0(arc)#1
+# Loading work.ddr_ctrl_infrastructure(arc)#1
+# Loading work.ddr_ctrl_iobs_0(arc)#1
+# Loading work.ddr_ctrl_infrastructure_iobs_0(arc)#1
+# Loading unisim.fddrrse(fddrrse_v)#1
+# Loading unisim.obufds(obufds_v)#1
+# Loading work.ddr_ctrl_controller_iobs_0(arc)#1
+# Loading unisim.obuf(obuf_v)#1
+# Loading unisim.ibuf(ibuf_v)#1
+# Loading work.ddr_ctrl_data_path_iobs_0(arc)#1
+# Loading work.ddr_ctrl_s3_dm_iob(arc)#1
+# Loading work.ddr_ctrl_s3_dqs_iob(arc)#1
+# Loading unisim.obuft(obuft_v)#1
+# Loading work.ddr_ctrl_s3_dq_iob(arc)#1
+# Loading work.ddr_ctrl_infrastructure_top0(arc)#1
+# Loading work.ddr_ctrl_cal_top(arc)#1
+# Loading work.ddr_ctrl_cal_ctl(arc_cal_ctl)#1
+# Loading work.ddr_ctrl_tap_dly(arc_tap_dly)#1
+# Loading unisim.fdr(fdr_v)#1
+# Loading work.ddr_tester_check(flow)#1
+# Loading work.ddr_tester_fsm(fsm)#1
+# Loading work.ddr_model(fast)
+# ** Error: (vsim-3058) The width (14) of Verilog port 'Addr' does not match the array length (13) of its VHDL connection.
+#         Region: /ddr_tester_s3e_tb/u_ddr_model
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./ddr_tester_s3e_tb.fdo PAUSED at line 60

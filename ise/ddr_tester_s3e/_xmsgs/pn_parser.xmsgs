@@ -101,5 +101,12 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/mig_s3e/ddr_ctrl_wr_gray_cntr.vhd&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1693" ><arg fmt="%s" index="1">Analyzing Verilog file \&quot;/home/lupo/Development/plasma_soc/rtl/mig_s3e/ddr_model.v\&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">/home/lupo/Development/plasma_soc/rtl/mig_s3e/ddr_model.v</arg>&quot; Line <arg fmt="%d" index="2">86</arg>. <arg fmt="%s" index="3">Include file found: &apos;/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/../../rtl/mig_s3e/ddr_model_parameters.vh&apos; in file &quot;/home/lupo/Development/plasma_soc/rtl/mig_s3e/ddr_model.v&quot; line 86
+</arg>
+</msg>
+
 </messages>
 
