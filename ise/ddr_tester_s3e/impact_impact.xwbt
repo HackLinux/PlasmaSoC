@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/impact.xsl
+OUTFILE=/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e
+LICENSE=iMPACT
+USER_INFO=iMPACT
