@@ -25,7 +25,7 @@ entity ddr_tester_s3e is
 		ddr_dqs    : inout  std_logic_vector (1 downto 0));
 end ddr_tester_s3e ;
 
-architecture struct of ddr_tester_s3e is
+architecture Behavioral of ddr_tester_s3e is
 
 	signal clk100_0        : std_logic;
 	signal clk100_180      : std_logic;
@@ -224,4 +224,4 @@ BEGin
 			leds            => leds,
 			read_done       => read_done);
 
-end struct;
+end Behavioral;

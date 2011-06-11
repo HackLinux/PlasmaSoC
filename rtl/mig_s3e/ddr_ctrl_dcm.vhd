@@ -36,7 +36,7 @@ entity ddr_ctrl_dcm is
           U2_LOCKED_OUT      : out   std_logic);
 end ddr_ctrl_dcm;
 
-architecture BEHAVIORAL of ddr_ctrl_dcm is
+architecture Behavioral of ddr_ctrl_dcm is
    signal GND_BIT            : std_logic;
    signal U1_CLKIN_IBUFG     : std_logic;
    signal U1_CLK2X_BUF       : std_logic;
@@ -184,6 +184,6 @@ begin
                 I2=>U2_FD1_Q_OUT,
                 O=>U2_OR3_O_OUT);
    
-end BEHAVIORAL;
+end Behavioral;
 
 

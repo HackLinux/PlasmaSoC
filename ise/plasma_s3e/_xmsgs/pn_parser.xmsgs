@@ -8,55 +8,139 @@
 <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/alu.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/bus_mux.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_cal_ctl.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/cache.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_cal_top.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/control.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_controller_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/eth_dma.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_controller_iobs_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/mem_ctrl.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_data_path_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/mlite_cpu.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_data_path_iobs_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/mlite_pack.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_data_read_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/mult.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_data_read_controller_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/pc_next.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_data_write_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/pipeline.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_dcm.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/plasma.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_dqs_delay_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/plasma_s3e.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_fifo_0_wr_en_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/ram_image.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_fifo_1_wr_en_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/reg_bank.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_infrastructure.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/shifter.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_infrastructure_iobs_0.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/lupo/Development/plasma_soc/rtl/plasma_s3e/uart.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_infrastructure_top0.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_iobs_0.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_parameters_0.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_ram8d_0.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_ram8d_1.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_rd_gray_cntr.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_s3_dm_iob.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_s3_dq_iob.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_s3_dqs_iob.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_tap_dly.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_top_0.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3e/ddr_ctrl_wr_gray_cntr.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/alu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/bus_mux.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/cache.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/control.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/eth_dma.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/mem_ctrl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/mlite_cpu.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/mlite_pack.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/mult.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/pc_next.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/pipeline.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/plasma.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/plasma_s3e.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/ram_image.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/reg_bank.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/shifter.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3e/uart.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

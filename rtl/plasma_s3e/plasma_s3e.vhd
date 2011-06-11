@@ -135,7 +135,7 @@ architecture logic of plasma_s3e is
 
 	component ddr_ctrl
 		port(
-	    cntrl0_ddr_dq                 : inout std_logic_vector(15 downto 0);
+			cntrl0_ddr_dq                 : inout std_logic_vector(15 downto 0);
 			cntrl0_ddr_a                  : out   std_logic_vector(12 downto 0);
 			cntrl0_ddr_ba                 : out   std_logic_vector(1 downto 0);
 			cntrl0_ddr_cke                : out   std_logic;
@@ -169,18 +169,18 @@ architecture logic of plasma_s3e is
 			cntrl0_ddr_dqs                : inout std_logic_vector(1 downto 0);
 			cntrl0_ddr_ck                 : out   std_logic_vector(0 downto 0);
 			cntrl0_ddr_ck_n               : out   std_logic_vector(0 downto 0));
-	end component;
+		end component;
 	
 	component ddr_ctrl_dcm
 		port(
-			U1_CLKIN_IN : IN std_logic;
-			U1_RST_IN : IN std_logic;          
-			U1_CLKIN_IBUFG_OUT : OUT std_logic;
-			U1_CLK2X_OUT : OUT std_logic;
-			U2_CLK0_OUT : OUT std_logic;
-			U2_CLK90_OUT : OUT std_logic;
-			U2_CLK180_OUT : OUT std_logic;
-			U2_LOCKED_OUT : OUT std_logic);
+			U1_CLKin_in : in std_logic;
+			U1_RST_in : in std_logic;          
+			U1_CLKin_IBUFG_out : out std_logic;
+			U1_CLK2X_out : out std_logic;
+			U2_CLK0_out : out std_logic;
+			U2_CLK90_out : out std_logic;
+			U2_CLK180_out : out std_logic;
+			U2_LOCKED_out : out std_logic);
 	end component;
 
    signal clk_reg      : std_logic;
@@ -202,10 +202,30 @@ architecture logic of plasma_s3e is
    signal gpio0_out    : std_logic_vector(31 downto 0);
    signal gpio0_in     : std_logic_vector(31 downto 0);
 
-   signal clk100_0	: std_logic;
-   signal clk100_90	: std_logic;
-   signal clk100_180	: std_logic;
-   signal clk100_lock	: std_logic;
+	signal clk100_0			: std_logic;
+	signal clk100_90			: std_logic;
+	signal clk100_180			: std_logic;
+	signal clk100_lock		: std_logic;
+	signal clk100_lock_n		: std_logic;
+	signal cntrl0_ddr_ck		: std_logic_vector(0 downto 0);
+	signal cntrl0_ddr_ck_n	: std_logic_vector(0 downto 0);
+	
+	signal dram_burst_done	: std_logic;
+	signal dram_cmd_reg		: std_logic_vector(2 downto 0);
+	signal dram_data_mask	: std_logic_vector(3 downto 0);
+	
+	signal rst_dqs_div		: std_logic;
+	signal rst_int				: std_logic;
+	signal dout					: std_logic;
+	
+--	signal data_valid			: std_logic;
+--	signal dram_addr			: std_logic_vector(24 downto 0);
+--	signal dram_ar_done		: std_logic;
+--	signal dram_ar_req		: std_logic;
+	signal dram_cmd_ack		: std_logic;
+--	signal dram_data_w		: std_logic_vector(31 downto 0);
+--	signal dram_init_val		: std_logic;
+--	signal output_data		: std_logic_vector(31 downto 0);
    
 begin  --architecture
    --Divide 50 MHz clock by two
@@ -295,53 +315,61 @@ begin  --architecture
 --         SD_LDM   => SD_LDM,     --low_byte_enable
 --         SD_LDQS  => SD_LDQS);   --low_data_strobe
 
-	u2_ddr_ctrl :ddr_ctrl
-		port map (
-			cntrl0_ddr_dq                 => cntrl0_ddr_dq,
-			cntrl0_ddr_a                  => cntrl0_ddr_a,
-			cntrl0_ddr_ba                 => cntrl0_ddr_ba,
-			cntrl0_ddr_cke                => cntrl0_ddr_cke,
-			cntrl0_ddr_cs_n               => cntrl0_ddr_cs_n,
-			cntrl0_ddr_ras_n              => cntrl0_ddr_ras_n,
-			cntrl0_ddr_cas_n              => cntrl0_ddr_cas_n,
-			cntrl0_ddr_we_n               => cntrl0_ddr_we_n,
-			cntrl0_ddr_dm                 => cntrl0_ddr_dm,
-			cntrl0_rst_dqs_div_in         => cntrl0_rst_dqs_div_in,
-			cntrl0_rst_dqs_div_out        => cntrl0_rst_dqs_div_out,
-			reset_in_n                    => reset_in_n,
-			cntrl0_burst_done             => cntrl0_burst_done,
-			cntrl0_init_val               => cntrl0_init_val,
-			cntrl0_ar_done                => cntrl0_ar_done,
-			cntrl0_user_data_valid        => cntrl0_user_data_valid,
-			cntrl0_auto_ref_req           => cntrl0_auto_ref_req,
-			cntrl0_user_cmd_ack           => cntrl0_user_cmd_ack,
-			cntrl0_user_command_register  => cntrl0_user_command_register,
-			cntrl0_clk_tb                 => cntrl0_clk_tb,
-			cntrl0_clk90_tb               => cntrl0_clk90_tb,
-			cntrl0_sys_rst_tb             => cntrl0_sys_rst_tb,
-			cntrl0_sys_rst90_tb           => cntrl0_sys_rst90_tb,
-			cntrl0_sys_rst180_tb          => cntrl0_sys_rst180_tb,
-			cntrl0_user_data_mask         => cntrl0_user_data_mask,
-			cntrl0_user_output_data       => cntrl0_user_output_data,
-			cntrl0_user_input_data        => cntrl0_user_input_data,
-			cntrl0_user_input_address     => cntrl0_user_input_address,
-			clk_int                       => clk_int,
-			clk90_int                     => clk90_int,
-			dcm_lock                      => dcm_lock,
-			cntrl0_ddr_dqs                => cntrl0_ddr_dqs,
-			cntrl0_ddr_ck                 => cntrl0_ddr_ck,
-			cntrl0_ddr_ck_n               => cntrl0_ddr_ck_n);
-			
-	u3_ddr_ctrl_dcm: ddr_ctrl_dcm
+	ddr_ck <= cntrl0_ddr_ck(0);
+	ddr_ck_n <= cntrl0_ddr_ck_n(0);
+	clk100_lock_n <= not(clk100_lock);
+	dout <= not(reset);
+	rst_int <= reset or clk100_lock_n;
+   
+	u1_ddr_ctrl_dcm: ddr_ctrl_dcm
 		port map(
-			U1_CLKIN_IN => CLK_50MHZ,
-			U1_RST_IN => reset,
-			U1_CLKIN_IBUFG_OUT => OPEN,
-			U1_CLK2X_OUT => OPEN,
-			U2_CLK0_OUT => clk100_0,
-			U2_CLK90_OUT => clk100_90,
-			U2_CLK180_OUT => clk100_180,
-			U2_LOCKED_OUT => clk100_lock);
+			U1_CLKin_in => clk50,
+			U1_RST_in => reset,
+			U1_CLKin_IBUFG_out => OPEN,
+			U1_CLK2X_out => OPEN,
+			U2_CLK0_out => clk100_0,
+			U2_CLK90_out => clk100_90,
+			U2_CLK180_out => clk100_180,
+			U2_LOCKED_out => clk100_lock);
+			
+	u2_ddr_ctrl : ddr_ctrl
+		port map(
+			cntrl0_ddr_dq                 => SD_DQ,
+			cntrl0_ddr_a                  => SD_A,
+			cntrl0_ddr_ba                 => SD_BA,
+			cntrl0_ddr_cke                => SD_CKE,
+			cntrl0_ddr_cs_n               => SD_CS,
+			cntrl0_ddr_ras_n              => SD_RAS,
+			cntrl0_ddr_cas_n              => SD_CAS,
+			cntrl0_ddr_we_n               => SD_WE,
+			cntrl0_ddr_dm                 => SD_UDM & SD_LDM,
+			cntrl0_rst_dqs_div_in         => rst_dqs_div,
+			cntrl0_rst_dqs_div_out        => rst_dqs_div,
+			reset_in_n                    => dout,
+			cntrl0_burst_done             => dram_burst_done,
+			cntrl0_init_val               => OPEN, -- dram_init_val,
+			cntrl0_ar_done                => OPEN, -- dram_ar_done,
+			cntrl0_user_data_valid        => OPEN, -- data_valid,
+			cntrl0_auto_ref_req           => OPEN, -- dram_ar_req,
+			cntrl0_user_cmd_ack           => dram_cmd_ack,
+			cntrl0_user_command_register  => dram_cmd_reg,
+			cntrl0_clk_tb                 => OPEN,
+			cntrl0_clk90_tb               => OPEN,
+			cntrl0_sys_rst_tb             => OPEN,
+			cntrl0_sys_rst90_tb           => OPEN,
+			cntrl0_sys_rst180_tb          => OPEN,
+			cntrl0_user_data_mask         => dram_data_mask,
+			cntrl0_user_output_data       => data_r_ddr,
+			cntrl0_user_input_data        => data_write,
+			cntrl0_user_input_address     => address(26 downto 2),
+			clk_int                       => clk100_0,
+			clk90_int                     => clk100_90,
+			dcm_lock                      => clk100_lock,
+			cntrl0_ddr_dqs                => SD_UDQS & SD_LDQS,
+			cntrl0_ddr_ck                 => SD_CK_P,
+			cntrl0_ddr_ck_n               => SD_CK_N);
+			
+	pause_ddr <= dram_cmd_ack;
 
    --Flash control (only lower 16-bit data lines connected)
    flash_ctrl: process(reset, clk_reg, flash_active, write_enable, 

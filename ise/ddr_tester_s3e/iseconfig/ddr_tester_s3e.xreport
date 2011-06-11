@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2011-06-08T05:51:44</DateModified>
+  <DateModified>2011-06-11T18:59:33</DateModified>
   <ModuleName>ddr_tester_s3e</ModuleName>
-  <SummaryTimeStamp>2011-06-08T04:16:04</SummaryTimeStamp>
-  <SavedFilePath>/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/iseconfig/ddr_tester_s3e.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/lupo/Development/plasma_soc/ise/ddr_tester_s3e/</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2011-06-11T18:56:59</SummaryTimeStamp>
+  <SavedFilePath>E:/Documents/UoA/Ptyxiakh/plasma_soc/ise/ddr_tester_s3e/iseconfig/ddr_tester_s3e.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/Documents/UoA/Ptyxiakh/plasma_soc/ise/ddr_tester_s3e\</ImplementationReportsDirectory>
   <DateInitialized>2011-06-03T21:03:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

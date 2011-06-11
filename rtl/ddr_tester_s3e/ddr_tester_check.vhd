@@ -1,60 +1,50 @@
-LIBRARY ieee;
-USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
-USE ieee.std_logic_unsigned.all;
-USE ieee.numeric_std.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
-ENTITY ddr_tester_check IS
-   PORT( 
-      clk100_90   : IN     std_logic;
-      data_valid  : IN     std_logic;
-      output_data : IN     std_logic_vector (31 DOWNTO 0);
-      read_done   : IN     std_logic;
-      rst_int     : IN     std_logic;
-      strt_pb     : IN     std_logic;
-      err         : OUT    std_logic;
-      error_trig  : OUT    std_logic);
-END ddr_tester_check;
+entity ddr_tester_check is
+   port( 
+      clk100_90   : in     std_logic;
+      data_valid  : in     std_logic;
+      output_data : in     std_logic_vector (31 downto 0);
+      read_done   : in     std_logic;
+      rst_int     : in     std_logic;
+      strt_pb     : in     std_logic;
+      err         : out    std_logic;
+      error_trig  : out    std_logic);
+end ddr_tester_check;
 
-ARCHITECTURE flow OF ddr_tester_check IS
+architecture Behavioral of ddr_tester_check is
 
-   -- Architecture declarations
-   SIGNAL data_count : std_logic_vector (15 DOWNTO 0); -- Internal data counter
-   SIGNAL expected : std_logic_vector (31 DOWNTO 0); -- Data expected
-   SIGNAL expected_old : std_logic_vector (31 DOWNTO 0); -- Data expected, old value
-   SIGNAL received : std_logic_vector (31 DOWNTO 0); -- Data received
-   SIGNAL received_old : std_logic_vector (31 DOWNTO 0); -- Data received, old value
-   SIGNAL check_ena : std_logic; -- Checker enable
-   SIGNAL check_ena_old : std_logic; -- Checker enable, old value
-   SIGNAL error_count : std_logic_vector (23 DOWNTO 0); -- Error counter
+   signal data_count		: std_logic_vector (15 downto 0);	-- internal data counter
+   signal expected		: std_logic_vector (31 downto 0);	-- data expected
+   signal expected_old	: std_logic_vector (31 downto 0);	-- data expected, old value
+   signal received		: std_logic_vector (31 downto 0);	-- data received
+   signal received_old	: std_logic_vector (31 downto 0);	-- data received, old value
+   signal check_ena		: std_logic;								-- checker enable
+   signal check_ena_old	: std_logic;								-- checker enable, old value
+   signal error_count	: std_logic_vector (23 downto 0);	-- error counter
 
-BEGIN
+begin
 
-   -----------------------------------------------------------------
-   datacount_proc : PROCESS (clk100_90, rst_int)
-   -----------------------------------------------------------------
-   BEGIN
-      -- Asynchronous Reset
-      IF (rst_int = '1') THEN
-         -- Reset Actions
+   datacount_proc : process (clk100_90, rst_int)
+   begin
+      if (rst_int = '1') then
          data_count <= (others => '0') ;
-
-      ELSIF (clk100_90'EVENT AND clk100_90 = '1') THEN
-         IF strt_pb = '1'  THEN
+      elsif (clk100_90'event and clk100_90 = '1') then
+         if strt_pb = '1'  then
             data_count <= (others => '0') ;
-         ELSIF data_valid = '1'  THEN
+         elsif data_valid = '1'  then
             data_count <= data_count + "10";
-         END IF;
-      END IF;
-   END PROCESS datacount_proc;
+         end if;
+      end if;
+   end process datacount_proc;
 
-   -----------------------------------------------------------------
-   expecteddata_proc : PROCESS (clk100_90, rst_int)
-   -----------------------------------------------------------------
-   BEGIN
-      -- Asynchronous Reset
-      IF (rst_int = '1') THEN
-         -- Reset Actions
+   expecteddata_proc : process (clk100_90, rst_int)
+   begin
+      if (rst_int = '1') then
          expected <= (others => '0');
          expected_old <= (others => '0');
          received <= (others => '0');
@@ -62,59 +52,51 @@ BEGIN
          check_ena <= '0';
          check_ena_old <= '0';
 
-      ELSIF (clk100_90'EVENT AND clk100_90 = '1') THEN
+      elsif (clk100_90'event and clk100_90 = '1') then
          expected <= expected_old;
          expected_old <= data_count & (data_count + '1');
          received <= received_old;
          received_old <= output_data ;
          check_ena <= check_ena_old;
          check_ena_old <= data_valid;
-      END IF;
-   END PROCESS expecteddata_proc;
+      end if;
+   end process expecteddata_proc;
 
-   -----------------------------------------------------------------
-   compare_proc : PROCESS (clk100_90, rst_int)
-   -----------------------------------------------------------------
-   BEGIN
-      -- Asynchronous Reset
-      IF (rst_int = '1') THEN
-         -- Reset Actions
+   compare_proc : process (clk100_90, rst_int)
+   begin
+      if (rst_int = '1') then
          error_count <= (others => '0');
          error_trig <= '0' ;
 
-      ELSIF (clk100_90'EVENT AND clk100_90 = '1') THEN
-         IF strt_pb = '1' THEN
+      elsif (clk100_90'event and clk100_90 = '1') then
+         if strt_pb = '1' then
             error_count <= (others => '0');
             error_trig <= '0' ;
-         ELSIF check_ena = '1' THEN
-            IF expected /= received THEN
+         elsif check_ena = '1' then
+            if expected /= received then
                error_count <= error_count + '1';
                error_trig <= '1' ;
-            END IF;
-         END IF;
-      END IF;
-   END PROCESS compare_proc;
+            end if;
+         end if;
+      end if;
+   end process compare_proc;
 
-   -----------------------------------------------------------------
-   showerror_proc : PROCESS (clk100_90, rst_int)
-   -----------------------------------------------------------------
-   BEGIN
-      -- Asynchronous Reset
-      IF (rst_int = '1') THEN
-         -- Reset Actions
+   showerror_proc : process (clk100_90, rst_int)
+   begin
+      if (rst_int = '1') then
          err <= '0' ;
 
-      ELSIF (clk100_90'EVENT AND clk100_90 = '1') THEN
-         IF strt_pb = '1'  THEN
+      elsif (clk100_90'event and clk100_90 = '1') then
+         if strt_pb = '1'  then
             err <= '0' ;
-         ELSIF read_done = '1'  THEN
-            IF error_count /= "000000000000000000000000" THEN
+         elsif read_done = '1'  then
+            if error_count /= "000000000000000000000000" then
                err <= '1' ;
-            ELSE
+            else
                err <= '0' ;
-            END IF;
-         END IF;
-      END IF;
-   END PROCESS showerror_proc;
+            end if;
+         end if;
+      end if;
+   end process showerror_proc;
 
-END flow;
+end Behavioral;

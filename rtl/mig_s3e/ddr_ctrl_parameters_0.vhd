@@ -91,11 +91,8 @@ constant   EXT_LOAD_MODE_REGISTER                    : std_logic_vector(12 downt
 constant   RESET_ACTIVE_LOW                         : std_logic := '1';
 constant   RAS_COUNT_VALUE                           : std_logic_vector(3 downto 0) := "0011";
 constant   RP_COUNT_VALUE                             : std_logic_vector(2 downto 0) := "001";
---constant   RFC_COUNT_VALUE                            : std_logic_vector(5 downto 0) := "000110";
-constant   RFC_COUNT_VALUE                            : std_logic_vector(5 downto 0) := "001111";
---constant   MAX_REF_WIDTH                                   : INTEGER   :=  10;
-constant   MAX_REF_WIDTH                                   : INTEGER   :=  11;
---constant   MAX_REF_CNT                     : std_logic_vector(9 downto 0) := "1011100110";
-constant   MAX_REF_CNT                     : std_logic_vector(10 downto 0) := "10000000001";
+constant   RFC_COUNT_VALUE                            : std_logic_vector(5 downto 0) := "000110";
+constant   MAX_REF_WIDTH                                   : INTEGER   :=  10;
+constant   MAX_REF_CNT                     : std_logic_vector(9 downto 0) := "1011100110";
 
 end ddr_ctrl_parameters_0 ;
