@@ -135,7 +135,7 @@ architecture Behavioral of ddr_tester_s3e is
 			read_done       : out    std_logic );
 	end component;
 
-BEGin
+begin
 
 	ddr_ck <= cntrl0_ddr_ck(0);
 	ddr_ck_n <= cntrl0_ddr_ck_n(0);

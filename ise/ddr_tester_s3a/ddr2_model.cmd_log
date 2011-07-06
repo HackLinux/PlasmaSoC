@@ -1,0 +1,2 @@
+vhdtdtfi -lang verilog -prj ddr_tester_s3a -o E:/Documents/UoA/Ptyxiakh/plasma_soc/ise/ddr_tester_s3a/ddr2_model.vhi -lib work E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3a//ddr2_model.v -module ddr2_model -template E:/Xilinx/13.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
+vhdtdtfi -lang verilog -prj ddr_tester_s3a -o E:/Documents/UoA/Ptyxiakh/plasma_soc/ise/ddr_tester_s3a/ddr2_model.vhi -lib work E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/mig_s3a//ddr2_model.v -module ddr2_model -template E:/Xilinx/13.1/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 
