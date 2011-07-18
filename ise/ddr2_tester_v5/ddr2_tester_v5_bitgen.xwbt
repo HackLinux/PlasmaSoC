@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\Documents\UoA\Ptyxiakh\plasma_soc\ise\ddr2_tester_v5\ddr2_tester_v5.ncd
+OUTFILE=E:\Documents\UoA\Ptyxiakh\plasma_soc\ise\ddr2_tester_v5\ddr2_tester_v5.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=E:\Documents\UoA\Ptyxiakh\plasma_soc\ise\ddr2_tester_v5
+LICENSE=ISE
+USER_INFO=No user information available.

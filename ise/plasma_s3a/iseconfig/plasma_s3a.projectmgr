@@ -7,17 +7,19 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/plasma_s3a - logic E:|Documents|UoA|Ptyxiakh|plasma_soc|rtl|plasma_s3a|plasma_s3a.vhd/u0_plama - plasma - logic</ClosedNode>
+         <ClosedNode>/plasma_s3a - logic E:|Documents|UoA|Ptyxiakh|plasma_soc|rtl|plasma_s3a|plasma_s3a.vhd/u0_plama - plasma - logic/u1_cpu - mlite_cpu - logic</ClosedNode>
          <ClosedNode>/plasma_s3a - logic E:|Documents|UoA|Ptyxiakh|plasma_soc|rtl|plasma_s3a|plasma_s3a.vhd/u1_plama - plasma - logic</ClosedNode>
          <ClosedNode>/plasma_s3a - logic E:|Documents|UoA|Ptyxiakh|plasma_soc|rtl|plasma_s3a|plasma_s3a.vhd/u2_ddr_ctrl - ddr_ctrl - arc_mem_interface_top</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>plasma_s3a - logic (E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/plasma_s3a.vhd)</SelectedItem>
+         <SelectedItem>u3_ddr_ctrl_fsm - ddr_ctrl_fsm - Behavioral (E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a8000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a80000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>plasma_s3a - logic (E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/plasma_s3a.vhd)</CurrentItem>
+      <CurrentItem>u3_ddr_ctrl_fsm - ddr_ctrl_fsm - Behavioral (E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -38,13 +40,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ddr_ctrl_dqs_delay_0.vhd</SelectedItem>
+         <SelectedItem>ddr_ctrl_fsm.vhd</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000004d2000000040101000100000000000000000000000064ffffffff000000810000000000000004000000b50000000100000000000000240000000100000000000000660000000100000000000003930000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ddr_ctrl_dqs_delay_0.vhd</CurrentItem>
+      <CurrentItem>ddr_ctrl_fsm.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -67,13 +69,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -122,4 +124,18 @@
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000175000000010000000100000000000000000000000064ffffffff000000810000000000000001000001750000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
 </Project>

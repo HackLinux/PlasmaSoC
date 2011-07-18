@@ -19,7 +19,7 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="0"/>
     </file>
     <file xil_pn:name="../../rtl/plasma_s3a/plasma_s3a.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="46"/>
     </file>
     <file xil_pn:name="../../rtl/plasma_core/alu.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="3"/>
@@ -67,7 +67,7 @@
     </file>
     <file xil_pn:name="../../rtl/plasma_core/plasma.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="15"/>
-      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
     </file>
     <file xil_pn:name="../../rtl/plasma_core/ram_image.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="16"/>
@@ -86,10 +86,10 @@
       <association xil_pn:name="Implementation" xil_pn:seqID="35"/>
     </file>
     <file xil_pn:name="../../rtl/mig_s3a/rtl/dcm_ddr_s3a.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="45"/>
     </file>
     <file xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="Implementation" xil_pn:seqID="43"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="44"/>
     </file>
     <file xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_cal_ctl.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="Implementation" xil_pn:seqID="20"/>
@@ -177,6 +177,10 @@
       <association xil_pn:name="PostMapSimulation" xil_pn:seqID="49"/>
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="49"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="49"/>
+    </file>
+    <file xil_pn:name="../../rtl/plasma_s3a/ddr_ctrl_fsm.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="49"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
     </file>
   </files>
 
@@ -296,7 +300,7 @@
     <property xil_pn:name="JTAG Pin TDI" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TDO" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
     <property xil_pn:name="JTAG Pin TMS" xil_pn:value="Pull Up" xil_pn:valueState="default"/>
-    <property xil_pn:name="Keep Hierarchy" xil_pn:value="No" xil_pn:valueState="default"/>
+    <property xil_pn:name="Keep Hierarchy" xil_pn:value="Soft" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Language" xil_pn:value="All" xil_pn:valueState="default"/>
     <property xil_pn:name="Last Applied Goal" xil_pn:value="Balanced" xil_pn:valueState="default"/>
     <property xil_pn:name="Last Applied Strategy" xil_pn:value="Xilinx Default (unlocked)" xil_pn:valueState="default"/>
@@ -328,12 +332,12 @@
     <property xil_pn:name="Mux Style" xil_pn:value="Auto" xil_pn:valueState="default"/>
     <property xil_pn:name="Netlist Hierarchy" xil_pn:value="As Optimized" xil_pn:valueState="default"/>
     <property xil_pn:name="Netlist Translation Type" xil_pn:value="Timestamp" xil_pn:valueState="default"/>
-    <property xil_pn:name="Number of Clock Buffers" xil_pn:value="24" xil_pn:valueState="default"/>
-    <property xil_pn:name="Number of Paths in Error/Verbose Report" xil_pn:value="3" xil_pn:valueState="default"/>
+    <property xil_pn:name="Number of Clock Buffers" xil_pn:value="8" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Number of Paths in Error/Verbose Report" xil_pn:value="200" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Number of Paths in Error/Verbose Report Post Trace" xil_pn:value="3" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimization Effort" xil_pn:value="Normal" xil_pn:valueState="default"/>
     <property xil_pn:name="Optimization Goal" xil_pn:value="Speed" xil_pn:valueState="default"/>
-    <property xil_pn:name="Optimization Strategy (Cover Mode)" xil_pn:value="Area" xil_pn:valueState="default"/>
+    <property xil_pn:name="Optimization Strategy (Cover Mode)" xil_pn:value="Speed" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Optimize Instantiated Primitives" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Bitgen Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
     <property xil_pn:name="Other Compxlib Command Line Options" xil_pn:value="" xil_pn:valueState="default"/>
@@ -355,7 +359,7 @@
     <property xil_pn:name="Perform Advanced Analysis" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Advanced Analysis Post Trace" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Perform Timing-Driven Packing and Placement" xil_pn:value="false" xil_pn:valueState="default"/>
-    <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="High" xil_pn:valueState="default"/>
+    <property xil_pn:name="Place &amp; Route Effort Level (Overall)" xil_pn:value="Standard" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Place And Route Mode" xil_pn:value="Normal Place and Route" xil_pn:valueState="default"/>
     <property xil_pn:name="Place MultiBoot Settings into Bitstream" xil_pn:value="false" xil_pn:valueState="default"/>
     <property xil_pn:name="Placer Effort Level (Overrides Overall Level)" xil_pn:value="None" xil_pn:valueState="default"/>
@@ -429,7 +433,7 @@
     <property xil_pn:name="Top-Level Source Type" xil_pn:value="HDL" xil_pn:valueState="default"/>
     <property xil_pn:name="Trim Unconnected Signals" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Tristate On Configuration Pulse Width" xil_pn:value="0" xil_pn:valueState="default"/>
-    <property xil_pn:name="Unused IOB Pins" xil_pn:value="Pull Down" xil_pn:valueState="default"/>
+    <property xil_pn:name="Unused IOB Pins" xil_pn:value="Float" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Use 64-bit PlanAhead on 64-bit Systems" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Automatic Do File" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Use Clock Enable" xil_pn:value="Yes" xil_pn:valueState="default"/>

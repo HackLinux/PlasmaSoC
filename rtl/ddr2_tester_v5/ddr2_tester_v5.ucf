@@ -1,0 +1,18 @@
+NET "sys_clk_p" TNM_NET = sys_clk_p;
+TIMESPEC TS_sys_clk_p = PERIOD "sys_clk_p" 200 MHz HIGH 50%;
+
+NET "sys_clk_n" TNM_NET = sys_clk_n;
+TIMESPEC TS_sys_clk_n = PERIOD "sys_clk_n" 200 MHz HIGH 50%;
+
+NET  "sys_clk_p"	LOC = "L19"  | IOSTANDARD = LVPECL_25;
+NET  "sys_clk_n"	LOC = "K19"  | IOSTANDARD = LVPECL_25;
+NET  "sys_rst_n"	LOC = "E9"   | IOSTANDARD = LVCMOS18;
+#NET  "start"		LOC = "AJ6"  | IOSTANDARD = LVCMOS18;
+NET  "leds[0]"		LOC = "H18"  | IOSTANDARD = LVCMOS18;
+NET  "leds[1]"		LOC = "L18"  | IOSTANDARD = LVCMOS18;
+NET  "leds[2]"		LOC = "G15"  | IOSTANDARD = LVCMOS18;
+NET  "leds[3]"		LOC = "AD26" | IOSTANDARD = LVCMOS18;
+NET  "leds[4]"		LOC = "G16"  | IOSTANDARD = LVCMOS18;
+NET  "leds[5]"		LOC = "AD25" | IOSTANDARD = LVCMOS18;
+NET  "leds[6]"		LOC = "AD24" | IOSTANDARD = LVCMOS18;
+NET  "leds[7]"		LOC = "AE24" | IOSTANDARD = LVCMOS18;

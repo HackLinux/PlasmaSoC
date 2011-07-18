@@ -157,6 +157,26 @@
       <association xil_pn:name="PostRouteSimulation" xil_pn:seqID="36"/>
       <association xil_pn:name="PostTranslateSimulation" xil_pn:seqID="36"/>
     </file>
+    <file xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_addr_gen_0.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="38"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="38"/>
+    </file>
+    <file xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmd_fsm_0.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="39"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="39"/>
+    </file>
+    <file xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmp_data_0.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="40"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="40"/>
+    </file>
+    <file xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_data_gen_0.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="41"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="41"/>
+    </file>
+    <file xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_test_bench_0.vhd" xil_pn:type="FILE_VHDL">
+      <association xil_pn:name="BehavioralSimulation" xil_pn:seqID="42"/>
+      <association xil_pn:name="Implementation" xil_pn:seqID="42"/>
+    </file>
   </files>
 
   <properties>
@@ -383,8 +403,8 @@
     <property xil_pn:name="Run Design Rules Checker (DRC)" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Safe Implementation" xil_pn:value="No" xil_pn:valueState="default"/>
     <property xil_pn:name="Security" xil_pn:value="Enable Readback and Reconfiguration" xil_pn:valueState="default"/>
-    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/ddr_tester_s3a_tb" xil_pn:valueState="non-default"/>
-    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.ddr_tester_s3a_tb" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Module Instance Name" xil_pn:value="/ddr_ctrl_test_bench_0" xil_pn:valueState="non-default"/>
+    <property xil_pn:name="Selected Simulation Root Source Node Behavioral" xil_pn:value="work.ddr_ctrl_test_bench_0" xil_pn:valueState="non-default"/>
     <property xil_pn:name="Selected Simulation Source Node" xil_pn:value="UUT" xil_pn:valueState="default"/>
     <property xil_pn:name="Shift Register Extraction" xil_pn:value="true" xil_pn:valueState="default"/>
     <property xil_pn:name="Show All Models" xil_pn:value="false" xil_pn:valueState="default"/>

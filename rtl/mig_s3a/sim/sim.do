@@ -66,6 +66,8 @@ vlib work
 vcom  ../rtl/*parameters*
 #Compile all modules#
 vcom  ../rtl/*
+#Compile reference testbench VHDL files
+#vcom  ../sim/*.vhd
 vcom  ../../ddr_tester_s3a/*.vhd
 #Compile files in sim folder (excluding model parameter file)#
 #$XILINX variable must be set

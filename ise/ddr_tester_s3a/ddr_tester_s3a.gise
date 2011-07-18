@@ -25,6 +25,125 @@
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="ddr_tester_s3a_guide.ncd" xil_pn:origination="imported"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1310255843" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1310255843">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1310270496" xil_pn:in_ck="3442062959255591720" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1310270496">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_check.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_fsm.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_s3a.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_s3a_tb.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/dcm_ddr_s3a.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_cal_ctl.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_cal_top.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_controller_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_controller_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_path_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_path_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_read_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_read_controller_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_write_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_dqs_delay_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_fifo_0_wr_en_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_fifo_1_wr_en_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure_top0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_parameters_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_ram8d_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_ram8d_1.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_rd_gray_cntr.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dm_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dq_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dqs_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_tap_dly.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_top_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_wr_gray_cntr.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr2_model.v"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr2_model_parameters.vh"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_addr_gen_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmd_fsm_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmp_data_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_data_gen_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_test_bench_0.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1310255844" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6896578021352995329" xil_pn:start_ts="1310255844">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1310255844" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8734667473245208087" xil_pn:start_ts="1310255844">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1310255844" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7259401203661883578" xil_pn:start_ts="1310255844">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1310270496" xil_pn:in_ck="3442062959255591720" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1310270496">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_check.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_fsm.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_s3a.vhd"/>
+      <outfile xil_pn:name="../../rtl/ddr_tester_s3a/ddr_tester_s3a_tb.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/dcm_ddr_s3a.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_cal_ctl.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_cal_top.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_controller_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_controller_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_path_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_path_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_read_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_read_controller_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_data_write_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_dqs_delay_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_fifo_0_wr_en_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_fifo_1_wr_en_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_infrastructure_top0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_iobs_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_parameters_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_ram8d_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_ram8d_1.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_rd_gray_cntr.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dm_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dq_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_s3_dqs_iob.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_tap_dly.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_top_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/rtl/ddr_ctrl_wr_gray_cntr.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr2_model.v"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr2_model_parameters.vh"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_addr_gen_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmd_fsm_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_cmp_data_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_data_gen_0.vhd"/>
+      <outfile xil_pn:name="../../rtl/mig_s3a/sim/ddr_ctrl_test_bench_0.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1310270631" xil_pn:in_ck="3442062959255591720" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="4201462325052510838" xil_pn:start_ts="1310270631">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+  </transforms>
 
 </generated_project>

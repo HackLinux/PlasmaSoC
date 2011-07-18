@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">234</arg>. <arg fmt="%s" index="3">Syntax error near &quot;then&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">251</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">255</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">262</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">265</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">274</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">277</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">280</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">287</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">294</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">297</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">300</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">309</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">312</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">315</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">324</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">331</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">334</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">339</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">346</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">349</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">356</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">359</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">368</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">371</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">374</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">381</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">388</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">391</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">394</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">403</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">406</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">409</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">418</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">429</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">436</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">443</arg>. <arg fmt="%s" index="3">Syntax error near &quot;when&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">446</arg>. <arg fmt="%s" index="3">Syntax error near &quot;case&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">450</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">451</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">718</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">720</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">721</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">729</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">732</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">733</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">757</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">759</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">760</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">781</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">783</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">784</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">807</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">809</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">810</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">838</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/ddr_ctrl_fsm.vhd</arg>&quot; Line <arg fmt="%d" index="2">845</arg>. <arg fmt="%s" index="3">Syntax error near &quot;Behavioral&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;E:/Documents/UoA/Ptyxiakh/plasma_soc/rtl/plasma_s3a/plasma_s3a.vhd&quot; into library work</arg>
+</msg>
+
+</messages>
+
